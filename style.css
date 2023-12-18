@@ -9,7 +9,7 @@
 }
 
 header {
-    background-color:antiquewhite;
+    background-color:rgb(106, 85, 58);
     width: 100%;
     position: fixed; 
     z-index: index 999;
@@ -20,7 +20,7 @@ header {
 }
 .logo{
     text-decoration:none ;
-    color:rgb(199, 169, 132);
+    color:rgb(255, 253, 251);
     text-transform: uppercase;
     font-weight: 700 ;
     font-size: 1.8em;
@@ -28,7 +28,7 @@ header {
 
 }
 .navigation a{
-    color:rgb(199, 169, 132);
+    color:rgb(255, 253, 251);
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
@@ -54,12 +54,13 @@ section{
 .main h2 {
     display: inline-block;
     margin: top 10px; ;
-    color:peru;
+    color:rgb(0, 0, 0);
     font: size 3em;
     font-weight: 600;
 }
+
 .main h3 {
-    color:grey;
+    color:rgb(211, 162, 71);
     font-size: 2em;
     font-weight:700;
     letter-spacing:  1px; 
@@ -149,4 +150,21 @@ color: saddlebrown
 .footer{
     background-color:antiquewhite ;
     color: rgb(199, 169, 132);
+}
+/* Ajoutez ces styles à votre fichier style.css */
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
+.info:hover {
+    color: rgb(161, 48, 48); /* Changez la couleur au survol de la souris */
+    cursor: pointer; /* Ajoutez un curseur pointer pour indiquer que c'est cliquable */
 }

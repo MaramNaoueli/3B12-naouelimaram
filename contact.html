@@ -3,7 +3,8 @@
 <head>
     <title>Portfolio</title>
     <link rel="stylesheet" gref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     
 </head>
 <body>
@@ -25,5 +26,31 @@
     </div>
     <a href="Accueil.html">BACK</a>
 </section>
+<script>
+    // Sélectionnez les éléments d'information par leur identifiant
+    var phoneInfo = document.getElementById('phoneInfo');
+    var emailInfo = document.getElementById('emailInfo');
 
+    // Ajoutez des gestionnaires d'événements pour le survol de la souris
+    if (phoneInfo && emailInfo) {
+        phoneInfo.addEventListener('mouseover', changeColor);
+        phoneInfo.addEventListener('mouseout', resetColor);
+        emailInfo.addEventListener('mouseover', changeColor);
+        emailInfo.addEventListener('mouseout', resetColor);
+    }
+
+    // Fonction pour changer la couleur
+    function changeColor() {
+        this.style.color = 'blue'; // Changez la couleur au survol
+    }
+
+    // Fonction pour réinitialiser la couleur
+    function resetColor() {
+        this.style.color = ''; // Réinitialisez la couleur après le survol
+    }
+</script>
 </body>
+
+</html>
+
+

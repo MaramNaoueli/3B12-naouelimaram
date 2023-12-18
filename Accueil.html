@@ -3,7 +3,8 @@
 <head>
     <title>Portfolio</title>
     <link rel="stylesheet" gref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     
 </head>
 <body>
@@ -19,15 +20,15 @@
 
     <section class="main">
         <div>
-            <h2>Bienvenue sur mon site web, Maram Naoueli<br></h2>
-            <h3>Etudiante en informatique à ESPRIT</h3>
-            <img src="images/m.jpg" width="300" height="300"> 
+            <h2>Bonjour, bienvenue sur mon site web </h2>
+            <h3>Je suis Maram Naouali</h1>
+            <h1>Etudiante en informatique a ESPRIT</h3>
+            <img src="images/maram.jpg" width="300" height="300"> 
         </div>
     </section>
 
 
-
-
+    
     <footer class="footer">
         <p>Copyrights @ <span>Maram Naouali</span></p>
         
@@ -35,10 +36,17 @@
 
 
 
-
-    
-
-
+ <script>
+    window.onload = function() {
+        var answer = confirm("Bienvenue! Avez-vous des questions?");
+        if (answer) {
+          var userQuestion = prompt("N'hesitez pas à demander n'importe quoi:");
+          if (userQuestion) {
+            alert("Merci pour votre question " + userQuestion);
+          }
+        }
+      };
+    </script>
 
 
 </body>
